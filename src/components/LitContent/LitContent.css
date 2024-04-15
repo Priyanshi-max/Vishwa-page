@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .title {
   font-family: Montserrat;
   font-size: 30px;
@@ -12,20 +13,35 @@
   text-align: left;
   color: #1e1053;
   padding: 0;
-  
 }
-.sub-title{
-    font-family: Montserrat;
-font-size: 18px;
-font-weight: 300;
-line-height: 28.8px;
-text-align: left;
-color: #050505;
-margin-top: 0
-;
+
+.sub-title {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28.8px;
+  text-align: left;
+  color: #050505;
+  margin-top: 0;
 }
+
+
 @media screen and (max-width: 768px) {
-    .content-box {
-      margin-left: 0; 
-    }
+  .content-box {
+    margin-left: 0;
+    width: 100%;
   }
+
+  .title {
+    font-size: 28px; 
+    line-height: 38.4px;
+    padding: 10px;
+    width: 85%;
+  }
+  .sub-title {
+    font-size: 12px; 
+    line-height: 19.5px; 
+    
+    width: 80%;
+  }
+}

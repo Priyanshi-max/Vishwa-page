@@ -7,7 +7,7 @@
 
 .occasion-text {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
 .occasion-text span {
@@ -26,6 +26,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap; 
+  margin-top: -13px;
 }
 
 .occasion-list li {
@@ -40,6 +41,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Occasion {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
   .occasion-text {
     flex-wrap: wrap; 
   }
@@ -47,9 +54,23 @@
   .occasion-text span {
     margin-bottom: 10px; 
   }
+  .occasion-text span {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 41.2px;
+    text-align: left;
+   margin-right: 7px;
+  }
 
   .occasion-list li {
     margin: 0; 
     padding: 10px; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: left;
+    margin-top: 2.5px;
+    margin-right: 8px;
+    padding: 10px;
   }
 }

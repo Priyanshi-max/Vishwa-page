@@ -16,23 +16,30 @@ const Header = () => {
     setShowFullContent(!showFullContent);
   };
   return (
-    <div className="header">
-      <div className="content-container">
-        <div className="heading">
-          <h3>Birthdays, Marriages & Death</h3>
-        </div>
-        <p className="sub-heading">Lorem ipsum dolor sit amet</p>
-        <p className="content">
-          {showFullContent
-            ? content
-            : `${content.split(" ").slice(0, 40).join(" ")}...`}
-        </p>
-        {!showFullContent && <span onClick={toggleContent}>Read More..</span>}
-        <div className="btn">
-          <button className="video-button">Watch Video</button>
+    <>
+      <div className="header">
+        <div className="content-container">
+          <div className="heading">
+            <h3>Birthdays, Marriages & Death</h3>
+          </div>
+          <p className="sub-heading">Lorem ipsum dolor sit amet , </p>
+          <div style={{ border: "1px solid white", width: "60%" }}></div>
+          <div className="content-container">
+            <p className="content">
+              {showFullContent
+                ? content
+                : `${content.split(" ").slice(0, 44).join(" ")}...`}
+            </p>
+            {!showFullContent && (
+              <span onClick={toggleContent}>Read More..</span>
+            )}
+          </div>
+          <div className="btn">
+            <button className="video-button">Watch Video</button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -75,6 +75,7 @@ const ModalForm = ({ showModal, setShowModal }) => {
       className="form"
       isOpen={showModal}
       onRequestClose={setShowModal}
+      preventScroll={false}
     >
       <div className="form-header">
         <h3>Before Proceeding To Celebrate !!</h3>

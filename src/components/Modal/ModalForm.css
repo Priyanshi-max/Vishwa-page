@@ -3,6 +3,7 @@
   border-radius: 10px;
   max-width: 90%;
   margin: 0 auto;
+  
 }
 
 .form-header {
@@ -82,7 +83,7 @@
 
 .submit-button {
   display: block;
-  width: 20%;
+
   margin: 20px auto;
   padding: 8px;
   background-color: #f3004f;
@@ -117,4 +118,12 @@
   width: 100%;
   justify-content: space-between;
   gap: 20%;
+}
+@media screen and (min-width: 768px) {
+  .form-row {
+    flex-direction: row; 
+  }
+  .submit-button {
+    width: 50%; 
+  }
 }

@@ -39,9 +39,9 @@ const IconCard = () => {
                 __html: each.data,
               }}
             />
-          </div>
-          <div className="icon-text-container">
-            <p className="icon-text">{each.title}</p>
+            <div className="icon-text-container">
+              <p className="icon-text">{each.title}</p>
+            </div>
           </div>
         </div>
       ))}
