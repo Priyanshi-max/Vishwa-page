@@ -1,0 +1,56 @@
+.Occasion {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.occasion-text {
+  display: flex;
+  align-items: center;
+}
+
+.occasion-text span {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 51.2px;
+  text-align: left;
+  color: #050505;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.occasion-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.occasion-list li {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 35.2px;
+  text-align: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .occasion-text {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+
+  .occasion-text span {
+    margin-bottom: 10px; /* Add margin bottom for spacing between lines */
+  }
+
+  .occasion-list li {
+    margin: 0; /* Remove margin for list items */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

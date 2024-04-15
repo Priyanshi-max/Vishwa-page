@@ -1,0 +1,64 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    max-width: 90%;
+    gap: 45px;
+  }
+  
+  .icon-card-container {
+    position: relative;
+  }
+  
+  .icon-text-container {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    
+  }
+  
+  .icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: background-color 0.3s ease;
+    padding-bottom: 60px;
+    height: 100px;
+  }
+  
+  .icon-card:hover {
+    background: linear-gradient(
+      319.6deg,
+      rgb(243, 0, 79) 20.5%,
+      rgb(255, 236, 68) 110.9%
+    );
+  }
+  
+  .icon-image {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    transition: filter 0.3s ease;
+  }
+  
+  .icon-card:hover .icon-image {
+    filter: brightness(0) invert(1);
+  }
+  
+  .icon-text {
+    
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+  }
+  
