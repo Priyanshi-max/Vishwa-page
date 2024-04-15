@@ -2,7 +2,7 @@
   width: 1100px;
   height: 508px;
   margin: 0 auto;
-  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  background: linear-gradient(319.6deg, rgb(243, 0, 79) 20.5%, rgb(255, 236, 68) 110.9%);
   display: flex;
   align-items: flex-start;
 }
@@ -65,33 +65,36 @@ span {
   background-color: #f7d2da;
 }
 @media screen and (max-width: 768px) {
-    .header {
-      flex-direction: column; 
-      width: 100vw;
-      height: auto;
-      margin: 0;
-    }
-  
-    .content-container {
-      padding-left: 20px;
-      
-    }
-    .content{
-      max-width: 70vw;
-    }
-  
-    .heading {
-      font-size: 14px;
-      line-height: 28.4px;
-    }
-  
-    .sub-heading {
-      font-size: 10px;
-      line-height: 12.4px;
-    }
-  
-    .video-button {
-      max-width: 150px; 
-    }
+  .header {
+    flex-direction: column; 
+    width: 100vw;
+    height: auto;
+    margin: 0;
   }
-  
+
+  .content-container {
+    padding-left: 20px;
+  }
+
+  .content {
+    max-width: 70vw;
+  }
+
+  .heading {
+    font-size: 14px;
+    line-height: 28.4px;
+  }
+
+  .sub-heading {
+    font-size: 10px;
+    line-height: 12.4px;
+  }
+
+  .video-button {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    max-width: 150px;
+  }
+}

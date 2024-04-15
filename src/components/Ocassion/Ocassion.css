@@ -20,13 +20,12 @@
   text-decoration: none;
   margin-right: 10px;
 }
-
 .occasion-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .occasion-list li {
@@ -42,15 +41,15 @@
 
 @media screen and (max-width: 768px) {
   .occasion-text {
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
   }
 
   .occasion-text span {
-    margin-bottom: 10px; /* Add margin bottom for spacing between lines */
+    margin-bottom: 10px; 
   }
 
   .occasion-list li {
-    margin: 0; /* Remove margin for list items */
-    padding: 10px; /* Adjust padding for smaller screens */
+    margin: 0; 
+    padding: 10px; 
   }
 }
